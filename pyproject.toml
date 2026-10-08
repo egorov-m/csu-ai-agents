@@ -1,0 +1,26 @@
+[project]
+name = "csu-ai-agents"
+version = "0.1.0"
+description = "Домашние задания по курсу «AI-агенты»"
+authors = [
+    {name = "Mikhail Egorov",email = "113785651+egorov-m@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "openai (>=3.24.0,<4.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.16.10,<0.17.0)"
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
